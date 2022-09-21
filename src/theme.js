@@ -1,8 +1,11 @@
 const theme = {
+  roundness: 3,
   colors: {
     textPrimary: "#24292e",
     textSecondary: "#586069",
     primary: "#0366d6",
+    dark: "#24292e",
+    grey: "#e1e4e8",
   },
   fontSizes: {
     body: 14,
