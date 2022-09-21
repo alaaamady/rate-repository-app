@@ -1,22 +1,27 @@
-import { TouchableHighlight, View, Text } from "react-native";
+import { View, Text } from "react-native";
 
-const RepositoryItem = ({ item, index, separators }) => {
-  <TouchableHighlight
-    key={item.id}
-    onShowUnderlay={separators.highlight}
-    onHideUnderlay={separators.unhighlight}
-  >
+const RepositoryItem = ({ repository }) => {
+  const {
+    fullName,
+    description,
+    language,
+    forksCount,
+    stargazersCount,
+    ratingAverage,
+    reviewCount,
+  } = repository;
+
+  return (
     <View style={{ backgroundColor: "red" }}>
-      <Text>{index}</Text>
-      <Text>Full name: {item.fullName}</Text>
-      <Text>Description: {item.description}</Text>
-      <Text>Language: {item.language}</Text>
-      <Text>Stars: {item.stargazersCount}</Text>
-      <Text>Forks: {item.forksCount}</Text>
-      <Text>Reviews: {item.reviewCount}</Text>
-      <Text>Rating: {item.ratingAverage}</Text>
+      <Text>Full name: {fullName}</Text>
+      <Text>Description: {description}</Text>
+      <Text>Language: {language}</Text>
+      <Text>Stars: {stargazersCount}</Text>
+      <Text>Forks: {forksCount}</Text>
+      <Text>Reviews: {reviewCount}</Text>
+      <Text>Rating: {ratingAverage}</Text>
     </View>
-  </TouchableHighlight>;
+  );
 };
 
 export default RepositoryItem;

@@ -16,7 +16,6 @@ const Main = () => {
       <View style={styles.container}>
         <Text>Rate Respository Application</Text>
       </View>
-      <Text>Test</Text>
       <RepositoryList />
     </>
   );
