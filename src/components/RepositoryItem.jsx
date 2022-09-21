@@ -12,7 +12,7 @@ const RepositoryItem = ({ repository }) => {
   } = repository;
 
   return (
-    <View style={{ backgroundColor: "red" }}>
+    <View style={{ backgroundColor: "white" }}>
       <Text>Full name: {fullName}</Text>
       <Text>Description: {description}</Text>
       <Text>Language: {language}</Text>
